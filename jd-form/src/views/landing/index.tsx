@@ -38,18 +38,20 @@ export default function LandingView() {
             }}
           >
             <Typography
+              data-test={'landing-page-text-h6'}
               variant='h6'
               sx={{ mt: 4, textTransform: 'uppercase', color: grey[800] }}
             >
               confirme sua presença
             </Typography>
             <Typography
+              data-test={'landing-page-text-h2'}
               variant='h2'
               sx={{ my: 4, fontWeight: 400, color: blue[800] }}
             >
               Você é o Meu Convidado Especial!
             </Typography>
-            <Typography variant='body1'>
+            <Typography data-test={'landing-page-text-body1'} variant='body1'>
               Para confirmar sua presença preencha o formulário, escolhendo sua
               cor favoria para ir no dia do evento.
             </Typography>
@@ -72,7 +74,11 @@ export default function LandingView() {
             </Card>
           </Box>
         </Box>
-        <ShowInDialog open={openDialog} onClose={handleDialog} title='Verificar Informações'>
+        <ShowInDialog
+          open={openDialog}
+          onClose={handleDialog}
+          title='Verificar Informações'
+        >
           <SignInForm />
         </ShowInDialog>
       </Grid>

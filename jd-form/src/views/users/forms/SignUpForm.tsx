@@ -69,7 +69,7 @@ export default function SignUpForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form data-test={'sign-up-form'} onSubmit={handleSubmit(onSubmit)}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12}>
           <FormControl>
