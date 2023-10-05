@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  administrator
+  customer
+}
+
+model User {
+  id          String    @id @default(cuid())
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  deletedAt   DateTime? @map("deleted_at") @db.Date
+  softDeleted Boolean?  @default(false) @map("soft_deleted")
+
+  isActive Boolean?  @default(true) @map("is_active")
+  role     UserRole? @default(customer)
+
+  name          String?
+  email         String  @unique
+  document      String  @unique
+  favoriteColor String? @map("favorite_color")
+  comments      String? @db.Text
+
+  @@map("users")
+}

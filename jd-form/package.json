@@ -1,0 +1,44 @@
+{
+  "name": "jd-form",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.1",
+    "@mui/lab": "^5.0.0-alpha.146",
+    "@mui/material": "^5.14.11",
+    "@mui/system": "^5.14.11",
+    "@mui/x-data-grid": "^6.16.0",
+    "@prisma/client": "^5.3.1",
+    "axios": "^1.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "next": "13.5.4",
+    "next-auth": "^4.23.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "swr": "^2.2.4",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cypress": "^13.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "prisma": "^5.3.1",
+    "typescript": "^5"
+  }
+}
