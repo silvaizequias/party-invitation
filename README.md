@@ -7,6 +7,8 @@ O frontend está usando a biblioteca MUI (Material UI) para a sua interface.
 
 O backend foi criado usando o próprio NextJS, contendo as rotas de usuário e autenticação.
 
+Aplicação online: https://party-invitation-silvaizequias.vercel.app
+
 > DEPENDÊNCIAS ESSENCIAIS
 
 Nesse projeto está sendo utilizada dentre outras, algumas dependências essenciais:
@@ -50,4 +52,4 @@ Para o primeiro acesso, após iniciar a aplicação, poderá acessar (pode ser n
 > MELHORIAS:
 
 - Testes E2E: foi realizada a configuração inicial do cypress e implementado apenas um teste básico de acesso e conteúdo da tela inicial
-- SWR: pode ser usado o motation assim que submetido o formulário para que a tela já carregue as informções instantaneamente (isso pode ser melhor refletido apenas na sessão de administrator)
+- SWR: pode ser usado o mutate assim que submetido o formulário para que a tela já carregue as informções instantaneamente (isso pode ser melhor refletido apenas na sessão de administrator)
