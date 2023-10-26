@@ -7,8 +7,6 @@ O frontend está usando a biblioteca MUI (Material UI) para a sua interface.
 
 O backend foi criado usando o próprio NextJS, contendo as rotas de usuário e autenticação.
 
-Aplicação online: https://party-invitation-silvaizequias.vercel.app
-
 > DEPENDÊNCIAS ESSENCIAIS
 
 Nesse projeto está sendo utilizada dentre outras, algumas dependências essenciais:
