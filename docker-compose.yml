@@ -19,11 +19,11 @@ services:
       context: ./jd-form
       dockerfile: Dockerfile
     environment:
-      - DATABASE_URL="postgresql://postgres:postgres@localhost:5544/challenge-eteg
-      - NEXTAUTH_URL="http://localhost:3000"
-      - NEXTAUTH_SECRET="INzqFryqA4HHghDa0LTTt1pfBbElbbSvXvSg1Hn2K20="
-      - NEXT_PUBLIC_JWT_SECRET_KEY="h/E16yRrziK9sGs9f/ZMOXscvbJvXXrPmad3g/77eXg="
-      - NEXT_PUBLIC_UNSPLASH_URL="https://source.unsplash.com/random/?rainbow-background"
+      - DATABASE_URL=""
+      - NEXTAUTH_URL=""
+      - NEXTAUTH_SECRET=""
+      - NEXT_PUBLIC_JWT_SECRET_KEY=""
+      - NEXT_PUBLIC_UNSPLASH_URL=""
     volumes:
       - ./jd-form:/usr/src/app
     depends_on:
